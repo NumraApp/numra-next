@@ -1,0 +1,59 @@
+{
+  "name": "@numra/next",
+  "version": "1.0.0",
+  "description": "Next.js App Router handlers for Numra \u2014 the backend endpoint @numra/react calls. Holds your API key so the browser never does.",
+  "license": "MIT",
+  "homepage": "https://numra.ma",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NumraApp/numra-next.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NumraApp/numra-next/issues"
+  },
+  "keywords": [
+    "numra",
+    "next",
+    "nextjs",
+    "cod",
+    "fraud",
+    "morocco"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "files": [
+    "src",
+    "index.d.ts",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
+  },
+  "dependencies": {
+    "@numra/core": "^1.0.0"
+  },
+  "peerDependencies": {
+    "next": ">=13.4"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
