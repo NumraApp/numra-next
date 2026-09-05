@@ -1,21 +1,21 @@
-# @numra/next
+# @getnumra/next
 
 **Numra phone checks, outcome reporting and verified webhooks as one Next.js App Router file.**
 
-[![npm version](https://img.shields.io/npm/v/@numra/next)](https://www.npmjs.com/package/@numra/next) [![npm downloads](https://img.shields.io/npm/dm/@numra/next)](https://www.npmjs.com/package/@numra/next) [![licence: MIT](https://img.shields.io/npm/l/@numra/next)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@getnumra/next)](https://www.npmjs.com/package/@getnumra/next) [![npm downloads](https://img.shields.io/npm/dm/@getnumra/next)](https://www.npmjs.com/package/@getnumra/next) [![licence: MIT](https://img.shields.io/npm/l/@getnumra/next)](LICENSE)
 
-The backend endpoint that `@numra/react` calls, as one App Router file. Holds
+The backend endpoint that `@getnumra/react` calls, as one App Router file. Holds
 your Numra API key so the browser never does.
 
 ```bash
-npm install @numra/next
+npm install @getnumra/next
 ```
 
 ## One file
 
 ```js
 // app/api/numra/[...numra]/route.js
-import { createNumraRoute } from '@numra/next';
+import { createNumraRoute } from '@getnumra/next';
 
 export const runtime = 'nodejs';
 
@@ -31,7 +31,7 @@ Then on the page:
 
 ```jsx
 'use client';
-import { useNumraCheck, RiskBadge } from '@numra/react';
+import { useNumraCheck, RiskBadge } from '@getnumra/react';
 
 const { data, isLoading } = useNumraCheck(phone);
 <RiskBadge check={data} loading={isLoading} />
@@ -153,11 +153,11 @@ Server:
 
 | Package | Repository |
 |---|---|
-| `@numra/core` | [numra-js-core](https://github.com/NumraApp/numra-js-core) |
-| `@numra/express` | [numra-express](https://github.com/NumraApp/numra-express) |
-| `@numra/fastify` | [numra-fastify](https://github.com/NumraApp/numra-fastify) |
-| `@numra/next` | [numra-next](https://github.com/NumraApp/numra-next) — this repo |
-| `@numra/nuxt` | [numra-nuxt](https://github.com/NumraApp/numra-nuxt) |
+| `@getnumra/core` | [numra-js-core](https://github.com/NumraApp/numra-js-core) |
+| `@getnumra/express` | [numra-express](https://github.com/NumraApp/numra-express) |
+| `@getnumra/fastify` | [numra-fastify](https://github.com/NumraApp/numra-fastify) |
+| `@getnumra/next` | [numra-next](https://github.com/NumraApp/numra-next) — this repo |
+| `@getnumra/nuxt` | [numra-nuxt](https://github.com/NumraApp/numra-nuxt) |
 | `numra/numra-php` | [numra-php](https://github.com/NumraApp/numra-php) |
 | `numra/laravel` | [numra-laravel](https://github.com/NumraApp/numra-laravel) |
 
@@ -165,11 +165,11 @@ Browser:
 
 | Package | Repository |
 |---|---|
-| `@numra/browser` | [numra-browser](https://github.com/NumraApp/numra-browser) |
-| `@numra/react` | [numra-react](https://github.com/NumraApp/numra-react) |
-| `@numra/vue` | [numra-vue](https://github.com/NumraApp/numra-vue) |
-| `@numra/svelte` | [numra-svelte](https://github.com/NumraApp/numra-svelte) |
-| `@numra/angular` | [numra-angular](https://github.com/NumraApp/numra-angular) |
+| `@getnumra/browser` | [numra-browser](https://github.com/NumraApp/numra-browser) |
+| `@getnumra/react` | [numra-react](https://github.com/NumraApp/numra-react) |
+| `@getnumra/vue` | [numra-vue](https://github.com/NumraApp/numra-vue) |
+| `@getnumra/svelte` | [numra-svelte](https://github.com/NumraApp/numra-svelte) |
+| `@getnumra/angular` | [numra-angular](https://github.com/NumraApp/numra-angular) |
 
 Documentation for all of them is at [numra.ma/docs](https://numra.ma/docs).
 

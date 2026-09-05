@@ -1,12 +1,12 @@
-import { Numra, createHandlers } from '@numra/core';
+import { Numra, createHandlers } from '@getnumra/core';
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   @numra/next — route handlers for the App Router
+   @getnumra/next — route handlers for the App Router
    ───────────────────────────────────────────────────────────────────────────
    One file in your app:
 
        // app/api/numra/[...numra]/route.js
-       import { createNumraRoute } from '@numra/next';
+       import { createNumraRoute } from '@getnumra/next';
 
        export const { POST } = createNumraRoute({
          apiKey: process.env.NUMRA_API_KEY,
@@ -16,11 +16,11 @@ import { Numra, createHandlers } from '@numra/core';
    ── Why a catch-all rather than three files ───────────────────────────────
    The browser package calls `${endpoint}/check`, `/outcome` and `/webhook`.
    A catch-all keeps those three on one mount point, so the `endpoint` prop in
-   @numra/react is a single string that matches what you wrote in the file
+   @getnumra/react is a single string that matches what you wrote in the file
    path — three separate route files would be three places to keep in step.
 
    ── Why `next` is an OPTIONAL peer ────────────────────────────────────────
-   Unlike @numra/express and @numra/fastify, nothing in this file imports the
+   Unlike @getnumra/express and @getnumra/fastify, nothing in this file imports the
    framework. A Next route handler receives a Web-standard Request and returns
    a Web-standard Response, so this package needs the App Router's file
    convention and nothing from the `next` package itself.
@@ -105,4 +105,4 @@ export function createNumraRoute(options = {}) {
   return { POST };
 }
 
-export { Numra, NumraError } from '@numra/core';
+export { Numra, NumraError } from '@getnumra/core';

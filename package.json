@@ -1,7 +1,7 @@
 {
-  "name": "@numra/next",
+  "name": "@getnumra/next",
   "version": "1.0.0",
-  "description": "Next.js App Router handlers for Numra \u2014 the backend endpoint @numra/react calls. Holds your API key so the browser never does.",
+  "description": "Next.js App Router handlers for Numra \u2014 the backend endpoint @getnumra/react calls. Holds your API key so the browser never does.",
   "license": "MIT",
   "homepage": "https://numra.ma",
   "repository": {
@@ -42,7 +42,7 @@
     "test": "node --test \"test/*.test.js\""
   },
   "dependencies": {
-    "@numra/core": "^1.0.0"
+    "@getnumra/core": "^1.0.0"
   },
   "peerDependencies": {
     "next": ">=13.4"

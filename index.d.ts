@@ -1,4 +1,4 @@
-import type { Numra, NumraError } from '@numra/core';
+import type { Numra, NumraError } from '@getnumra/core';
 
 export interface NumraRouteOptions {
   /** Numra credential. Server-side only. */
@@ -49,4 +49,4 @@ export declare function createNumraRoute(options?: NumraRouteOptions): {
   POST: (request: Request, ctx?: NumraRouteContext) => Promise<Response>;
 };
 
-export { Numra, NumraError } from '@numra/core';
+export { Numra, NumraError } from '@getnumra/core';
